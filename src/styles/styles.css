@@ -625,7 +625,7 @@ footer {
 
 /* Responsivo */
 
-@media(max-width: 360px){
+@media(max-width: 450px){
     body {
         background-size: 100%;
         background-size: auto;
