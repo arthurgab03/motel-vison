@@ -1,0 +1,659 @@
+/* Gerais */
+
+
+body {
+    background-image: url(../imagens/slider-d.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p {
+    color: #2A2A2A
+}
+
+/* Navbar */
+
+header,
+.navbar {
+    background-color: transparent;
+}
+
+#navbar-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #FFF;
+}
+
+#navbar-links a {
+    color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+    margin: 0 10px;
+}
+
+.checkin {
+    background-color: #FFF;
+    margin-left: 100px;
+    padding: 12px 16px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 300ms;
+}
+
+.checkin:hover {
+    transform: scale(1.1)
+}
+
+
+/* main */
+
+
+main {
+    display: flex;
+}
+
+main h1 {
+    position: absolute;
+    width: 155px;
+    height: 27px;
+    left: 600px;
+    top: 283px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}
+
+main h2 {
+    position: absolute;
+    width: 363px;
+    height: 89px;
+    left: 500px;
+    top: 297px;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 89px;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+}
+
+.buttons {
+    width: 940px;
+    display: flex;
+    position: absolute;
+    top: 400px;
+
+
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    position: relative;
+    left: 510px;
+    border: none;
+    width: 160px;
+    height: 41px;
+    background: #7A7266;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: 300ms;
+
+
+}
+
+.btn-1:hover {
+    background: #5A493E;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 10px;
+    border: none;
+    width: 160px;
+    height: 41px;
+    position: relative;
+    left: 530px;
+    background: #5A493E;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition: 300ms;
+}
+
+.btn-2:hover {
+    background-color: #7A7266;
+}
+
+/* Section */
+
+section {
+    width: 100%;
+    position: absolute;
+    top: 750px;
+    height: 110vh;
+    background-color: #7A7266;
+}
+
+
+
+.carousel-inner h2 {
+    text-align: center;
+    margin: 20px 0;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    color: #FFF
+}
+
+
+
+
+.carousel-item {
+    height: 500px;
+}
+
+
+section img {
+    position: relative;
+    width: 752px;
+    height: 440px;
+    left: 190px;
+    display: flex;
+}
+
+
+
+.carousel-caption {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    position: absolute;
+    top: 360px;
+    width: 342px;
+    height: 128px;
+    left: calc(50% - 342px/2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.carousel-caption h3 {
+    color: #000000;
+    position: relative;
+    width: 125px;
+    height: 29px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.carousel-caption p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    width: 145px;
+    height: 21px;
+    left: -20px;
+
+
+
+}
+
+.carousel-caption a {
+    flex-direction: row;
+    position: relative;
+    top: -30px;
+    padding: 12px 16px;
+    width: 109px;
+    height: 41px;
+    float: right;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+
+
+    background: #5A493E;
+
+}
+
+.caixa {
+    display: flex;
+}
+
+.all-suites {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    left: 600px;
+
+}
+
+/* Sobre o motel */
+
+.about {
+    position: absolute;
+    top: 1460px;
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+
+
+
+.about img {
+    position: absolute;
+    left: -10px;
+    top: 0px
+}
+
+#about-text {
+    background-color: #FFF;
+    margin-top: 50px;
+    height: 450px
+}
+
+#about-text h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 30px 0;
+}
+
+#about-text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+
+}
+
+#about-text a {
+    flex-direction: row;
+    padding: 12px 16px;
+    width: 109px;
+    height: 41px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    margin: 30px 0;
+
+
+    background: #5A493E;
+
+
+}
+
+/* Cortesias do motel */
+
+.courtesies {
+    height: 655px;
+    background-color: #6C6359;
+    top: 2160px;
+}
+
+.courtesies a {
+    display: flex;
+    position: relative;
+    left: 600px;
+    top: -20px;
+    flex-direction: row;
+    padding: 12px 16px;
+    width: 185px;
+    height: 41px;
+    background: #2A2A2A;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: 300ms;
+
+}
+
+.courtesies a:hover {
+    transform: scale(1.1);
+}
+
+.main-title {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card {
+    width: 368px;
+    text-align: center;
+
+
+}
+
+.card h4 {
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card img {
+    width: 368px;
+    height: 210px;
+    position: relative;
+    left: -1px;
+    top: -1px;
+}
+
+
+
+#card1 {
+    margin-left: -80px;
+    margin-top: 20px
+}
+
+#card2 {
+
+    margin: 0 100px;
+    margin-top: 20px;
+}
+
+#card3 {
+    display: flex;
+    margin: 0 250px;
+    margin-top: 20px;
+}
+
+/* localização do Motel */
+
+.location {
+    top: 2810px;
+    background-color: #EEEEEE;
+    height: 450px;
+}
+
+.location img {
+    display: flex;
+    position: relative;
+    left: 20px;
+}
+
+#location-text {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0
+}
+
+#location-text h3 {
+    margin-top: 60px;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-size: 34px;
+}
+
+#location-text p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#location-text a {
+    margin-top: 40px;
+    padding: 12px 16px;
+
+
+    width: 109px;
+    height: 41px;
+
+    background: #5A493E;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Rodapé */
+
+footer {
+    height: 290px;
+    background-color: #2A2A2A;
+    position: relative;
+    top: 3311px;
+    padding: 64px 144px;
+}
+
+.content-footer {
+    width: 270px;
+}
+
+.content-footer img {
+    width: 189px;
+}
+
+.content-footer p {
+    margin-top: 30px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.content-list1 {
+
+    width: 120px;
+    position: absolute;
+    left: 600px;
+    top: 60px;
+    display: flex;
+    height: 200px;
+}
+
+.content-list1 li {
+    list-style: none;
+    display: flex;
+}
+
+.content-list1 a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.content-list2 {
+
+
+    width: 140px;
+    position: absolute;
+    left: 800px;
+    top: 60px;
+    display: flex;
+    height: 200px;
+}
+
+.content-list2 li {
+    list-style: none;
+    display: flex;
+
+}
+
+.content-list2 a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.contact {
+    width: 190px;
+    position: absolute;
+    left: 1000px;
+    top: 60px;
+    display: flex;
+    height: 200px;
+
+}
+
+.contact p {
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.contact h5 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.phone {
+    height: 70px;
+    width: 120px;
+}
+
+.email {
+
+    position: absolute;
+    top: 70px;
+}
+
+.copyright {
+    display: flex;
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+
+}
+
+.copyright p {
+    color: #FFFFFF;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Titillium';
+    font-weight: 400;
+    font-size: 10px;
+
+}
+
+/* Responsivo */
+
+@media(max-width: 360px){
+    body {
+        background-size: 100%;
+        background-size: auto;
+    }
+
+    header {
+        padding: 10px 0;
+        background-color: #2A2A2A;
+        width: 100%;
+        position: absolute;
+        top: 700px;
+    }
+
+    main {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        left: -300px;
+
+    }
+
+   main h2 {
+    width: 328px;
+    font-weight: 600;
+    font-size: 53px;
+   }
+
+    
+}
+
