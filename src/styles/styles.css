@@ -625,7 +625,7 @@ footer {
 
 /* Responsivo */
 
-@media(max-width: 450px){
+@media(max-width: 500px){
     body {
         background-image: url(../imagens/slider-m.svg);
         background-size: 100%;
@@ -645,7 +645,7 @@ footer {
         position: absolute;
         width: 100%;
         background-color: black;
-        left: -300px;
+        left: -520px;
 
     }
 
