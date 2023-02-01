@@ -15,8 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,700&display=swap"
         rel="stylesheet">
 
-        <!-- Fonte Titillium -->
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- Fonte Titillium -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
 
 
     <!-- Bootstrap -->
@@ -24,7 +24,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/styles/styles.css">
 
-    <!-- Scripts -->
+    <!-- Scripts essenciais para o Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -33,45 +33,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
     <!-- Script do Font Awesome -->
     <script src="https://kit.fontawesome.com/9b1a63a6b0.js" crossorigin="anonymous"></script>
-
-   
-
-
-
 </head>
 
 <body>
+    <!-- Cabeçalho e barras de navegação -->
     <header>
         <div class="container" id="navbar-container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a href="#" class="navbar-brand">
                     <img id="logo" src="./src/imagens/motel.svg" alt="logo do Motel Vison">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu"> Início </a>
-                        <a class="nav-item nav-link" id="suites-menu"> Suítes </a>
-                        <a class="nav-item nav-link" id="about-menu"> O Motel </a>
-                        <a class="nav-item nav-link" id="courtesies-menu"> Cortesias </a>
-                        <a class="nav-item nav-link" id="location-menu"> Localização </a>
-                        <a class="nav-item nav-link" id="contact-menu"> Contato </a>
+                        <a class="nav-item nav-link" href="#home" id="home-menu"> Início </a>
+                        <a class="nav-item nav-link" href="#sectionSlider" id="suites-menu"> Suítes </a>
+                        <a class="nav-item nav-link" href="#about-motel" id="about-menu"> O Motel </a>
+                        <a class="nav-item nav-link" href="#courtesies-content" id="courtesies-menu"> Cortesias </a>
+                        <a class="nav-item nav-link" href="#location-text" id="location-menu"> Localização </a>
+                        <a class="nav-item nav-link" href="#contact-footer" id="contact-menu"> Contato </a>
 
 
 
                     </div>
-                    <button class="checkin"> Reservas </button>
+                    <button class="checkin" id="checkin"> Reservas </button>
                 </div>
             </nav>
         </div>
     </header>
-
+    <!-- Conteúdo principal -->
     <main>
-        <div class="main-content">
+        <div class="main-content" id="home">
             <h1> Bem vindo ao </h1>
             <h2> Vison Motel </h2>
             <div class="buttons">
@@ -80,14 +78,14 @@
             </div>
         </div>
     </main>
-
-    <section>
+    <!-- Suites do Motel -->
+    <section class="our-suites">
         <div class="container">
             <div id="sectionSlider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <h2> Nossas Suítes</h2>
                     <div class="carousel-item active">
-                        <img src="./src/imagens/image 1.png" class="d-block w-60" alt="suíte cristal">
+                        <img src="./src/imagens/image 1.svg" class="d-block w-60" alt="suíte cristal">
                         <div class="carousel-caption d-none d-md-block">
                             <h3> Suíte Cristal </h3>
                             <p> A partir de R$ 164,00</p>
@@ -139,10 +137,8 @@
 
 
     </section>
-
-
     <!-- Sobre o Motel -->
-    <section class="about">
+    <section class="about" id="about-motel">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
@@ -178,16 +174,15 @@
 
                     </div>
                     <div class="col-md-6">
-                        <img class="img-fluid" src="./src/imagens/o-motel-d.png" alt="Sobre o Motel Vison">
+                        <img class="img-fluid" src="./src/imagens/o-motel-d.svg" alt="Sobre o Motel Vison">
 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Cortesias do Motel -->
-    <section class="courtesies">
+    <section class="courtesies" id="courtesies-content">
 
         <div class="container">
             <div class="row">
@@ -196,7 +191,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card" id="card1">
-                        <img src="./src/imagens/img 1.png" class="card-img-top" alt="cortesia de café da manhã">
+                        <img src="./src/imagens/img 1.svg" class="card-img-top" alt="cortesia de café da manhã">
                         <div class="card-body">
                             <h4 class=card-title>
                                 Café da manhã
@@ -211,7 +206,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card" id="card2">
-                        <img src="./src/imagens/img 2.png" class="card-img-top"
+                        <img src="./src/imagens/img 2.svg" class="card-img-top"
                             alt="cortesia de benefício especial para aniversariantes">
                         <div class="card-body">
                             <h4 class=card-title>
@@ -226,7 +221,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card" id="card3">
-                        <img src="./src/imagens/img 3.png" class="card-img-top" alt="cortesia de descontos">
+                        <img src="./src/imagens/img 3.svg" class="card-img-top" alt="cortesia de descontos">
                         <div class="card-body">
                             <h4 class=card-title>
                                 Descontos
@@ -247,7 +242,6 @@
 
 
     </section>
-
     <!-- localização do Motel -->
     <section class="location">
         <div class="container-fluid">
@@ -256,7 +250,7 @@
 
 
                     <div class="col-md-6">
-                        <img class="img-fluid" src="./src/imagens/mapa-d.png" alt="Localização do Motel em mapa">
+                        <img class="img-fluid" src="./src/imagens/mapa-d.svg" alt="Localização do Motel em mapa">
 
                     </div>
 
@@ -279,32 +273,31 @@
             </div>
         </div>
     </section>
-
-    <!-- Rodapé -->
-    <footer>
+    <!-- Rodapé e contatos -->
+    <footer id="contact-footer">
         <div class="content-footer">
-            <img src="./src/imagens/motel.svg">
+            <img src="./src/imagens/motel.svg" alt="logo do Motel Vison">
             <p> Rua SPMS, Conj./Lote 175/225 - Núcleo Bandeirante - Brasília - DF </p>
         </div>
 
         <div class="content-list1">
             <ul>
                 <li>
-                    <a> 
-                    Início
-                </a>
+                    <a href="#home">
+                        Início
+                    </a>
                 </li>
 
                 <li>
-                    <a> 
-                    Suítes
-                </a>
+                    <a href="#sectionSlider">
+                        Suítes
+                    </a>
                 </li>
 
                 <li>
-                    <a> 
-                    O Motel
-                </a>
+                    <a href="#about-motel">
+                        O Motel
+                    </a>
                 </li>
             </ul>
         </div>
@@ -312,21 +305,21 @@
         <div class="content-list2">
             <ul>
                 <li>
-                    <a> 
-                    Gastronomia
-                </a>
+                    <a href="#courtesies-content">
+                        Gastronomia
+                    </a>
                 </li>
 
                 <li>
-                    <a> 
-                    Localização 
-                </a>
+                    <a href="#location-text">
+                        Localização
+                    </a>
                 </li>
 
                 <li>
-                    <a> 
-                    Reservas
-                </a>
+                    <a href="#checkin">
+                        Reservas
+                    </a>
                 </li>
             </ul>
         </div>
@@ -342,16 +335,30 @@
                 <h5> contato@motelvison.com </h5>
             </div>
 
-            
+
         </div>
+
+        <button class="bttn-1"> Reservas </button>
+        <button class="bttn-2"> Ver suítes </button>
+        <button class="bttn-3"> Whatsapp </button>
+        <button class="bttn-4"> Contato </button>
+
+
+
+
+
+
+
+
+
+
+
         <div class="copyright">
-            <p> guia de motéis sites │ guia de motéis ©  </p>
+            <p> guia de motéis sites │ guia de motéis © </p>
         </div>
 
-        
+
     </footer>
-
-
 </body>
 
 </html>
